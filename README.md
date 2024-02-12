@@ -1,2 +1,2 @@
 	
-<center>Hola, estoy centrado con una etiqueta sencilla</center>
+<center>En este repositorio encontrara los puntos asociados a laborotorio # 1. </center>
