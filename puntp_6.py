@@ -1,0 +1,2 @@
+#Realice un programa que calcule la fuerza de avance y retroceso de un cilindro neumático de doble efecto. 
+#Debe establecer previamente los valores de presión,así como las dimensiones físicas del cilindro para realizar el cálculo.
