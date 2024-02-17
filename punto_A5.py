@@ -3,20 +3,20 @@
 import numpy as np
 
 def Rx(angulo):
-    radianes = int(angulo)
+    grados = int(angulo)
     matriz_rotacion_x = np.array([
         [1, 0, 0],
-        [0, np.cos(radianes), -np.sin(radianes)],
-        [0, np.sin(radianes), np.cos(radianes)]
+        [0, np.cos(grados), -np.sin(grados)],
+        [0, np.sin(grados), np.cos(grados)]
     ])
     return matriz_rotacion_x
 
 def Ry(angulo):
-    radianes = int(angulo)
+    grados = int(angulo)
     matriz_rotacion_y = np.array([
-        [np.cos(radianes), 0, np.sin(radianes)],
+        [np.cos(grados), 0, np.sin(grados)],
         [0, 1, 0],
-        [-np.sin(radianes), 0, np.cos(radianes)]
+        [-np.sin(grados), 0, np.cos(grados)]
     ])
     return matriz_rotacion_y
 
@@ -29,10 +29,10 @@ def Rz(angulo):
     ])
     return matriz_rotacion_z
 
-angulo_x = 98
-angulo_y = 50
-angulo_z = 30
 
+angulo_x = 98
+angulo_y = 65
+angulo_z = 30
 
 
 matriz_rotacion_x = Rx(angulo_x)
