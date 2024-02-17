@@ -10,5 +10,5 @@ while flag == 0:
         print("Continuo entonces")
     if respuesta == "no":
         flag = True
-print(f'fin de programa, gracias')
+print(f'fin de programa')
 print()
