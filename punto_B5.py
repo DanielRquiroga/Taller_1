@@ -2,7 +2,7 @@
 
 # Initialize the variable to store the user's response
 flag = 0
-# Continue asking the user for their response until they type "No"
+# continua preguntando"
 while flag == 0:
     print()
     respuesta = input("¿Desea continuar Si/No? ").lower()

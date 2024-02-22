@@ -1,35 +1,40 @@
 import matplotlib.pyplot as plt
-import skimage.io as io
-import skimage.measure as measure
+import numpy as np
 
-# Load the Ferrari logo image
-ferrari = io.imread('ferrari.png')
+def dibujar_nombre():
+    # Crear un nuevo plot
+    fig, ax = plt.subplots()
 
-# Convert the Ferrari logo image to grayscale
-ferrari_gray = skimage.color.rgb2gray(ferrari)
+    # Dibujar líneas y círculos para formar el nombre
+    # Ejemplo de líneas
+    ax.plot([1, 2, 3, 4, 5], [2, 5, 3, 1, 4], color='blue', label='Líneas')
 
-# Extract the contours of the Ferrari logo image
-ferrari_contours = measure.find_contours(ferrari_gray, 0.5)
+    # Ejemplo de círculos
+    centro_circulo = (6, 3)
+    radio_circulo = 1
+    circulo = plt.Circle(centro_circulo, radio_circulo, color='red', fill=False, label='Círculo')
+    ax.add_patch(circulo)
 
-# Load the BMW logo image
-bmw = io.imread('bmw.png')
+    # Texto con tu nombre
+    ax.text(3, 6, 'Tu Nombre', fontsize=12, ha='center', va='center')
 
-# Convert the BMW logo image to grayscale
-bmw_gray = skimage.color.rgb2gray(bmw)
+    # Configurar el aspecto del plot
+    plt.title('Dibujando Mi Nombre')
+    plt.xlabel('Eje X')
+    plt.ylabel('Eje Y')
+    plt.grid(True)
+    plt.legend()
 
-# Extract the contours of the BMW logo image
-bmw_contours = measure.find_contours(bmw_gray, 0.5)
+    # Ajustar límites para una mejor visualización
+    ax.set_xlim(0, 7)
+    ax.set_ylim(0, 7)
 
-# Plot the Ferrari logo contours
-fig, ax = plt.subplots()
-ax.imshow(ferrari)
-for contour in ferrari_contours:
-    ax.plot(contour[:, 1], contour[:, 0], linewidth=1.5, color='red')
-plt.show()
+    # Mostrar el plot
+    plt.show()
 
-# Plot the BMW logo contours
-fig, ax = plt.subplots()
-ax.imshow(bmw)
-for contour in bmw_contours:
-    ax.plot(contour[:, 1], contour[:, 0], linewidth=1.5, color='red')
-plt.show()
+# Llamar a la función para dibujar el nombre
+dibujar_nombre()
+
+
+# Llamar a la función para dibujar el nombre
+dibujar_nombre()

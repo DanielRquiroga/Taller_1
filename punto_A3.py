@@ -15,6 +15,6 @@ phi = np.arccos(rectangular[2]/r2)                      #np.arcos calcula el cos
 
 
 print(f'''las coordenadas rectangulares son: {rectangular}
-las coordenadas cilindricas son: [{radio:.2f} {theta:.2f} {zeta}] este resultado esta en radians
+las coordenadas cilindricas son: [{radio:.2f} {theta:.2f} {zeta}] este resultado esta en radianes
 las coordenadas esfericas son: [{r2:.2f} {theta2:.2f} {phi:.2f}] este resultado esta en radianes
 ''')

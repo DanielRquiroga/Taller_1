@@ -1,6 +1,7 @@
 #Realice en funciones las rotaciones en X, Y y Z, 
 #donde se tenga un parámetro de entrada (ángulo) y un parámetro de salida (matriz).
 import numpy as np
+np.set_printoptions(precision=4) #para cambiar el numero de decimales sin cambiar tipo de variab;e
 
 def Rx(angulo):
     grados = int(angulo)

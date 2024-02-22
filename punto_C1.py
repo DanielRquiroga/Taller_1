@@ -6,12 +6,10 @@ temp = np.arange (-200, 200.5, 0.5)       #ingreso de temperatura numpy.arange g
 ro=100                                    #100 ohms a 0 grados
 coe_pt=0.385                              #coeficiente platino
 ar=coe_pt*temp 
-
-
 resistencia=ro+ar 
-
 plt.title ('Comportamiento sensor PT100')
 plt.ylabel('Resistencia Ω')
 plt.xlabel('Temperatura °C')
 plt.plot(temp,resistencia)
+plt.grid(True)
 plt.show()
