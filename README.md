@@ -1,12 +1,12 @@
 
-# Taller Electiva Robotica
+# Taller Algoritmos de Robotica
 Taller # 1 asignado para el corte 1.
 
 ## Objetivos
 
  - [uso basico python.](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
- - manejo de arreglos.
- - uso e implementacion librerias varias.
+ - [manejo de arreglos.](https://docs.python.org/es/3/library/array.html)
+ - [uso e implementacion librerias varias.](https://numpy.org/)
 
 ## Documentacion
 
