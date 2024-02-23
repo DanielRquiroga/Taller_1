@@ -4,5 +4,5 @@ import numpy as np
 numeros = int(input(f'ingrse cantidad de numeros a generar\n'))
 inferior = int(input(f'''ingrese rango inferior\n'''))
 superior = int(input(f'ingrese rango isuperior\n'))
-aleatorio = np.random.randint(inferior,superior + 3, size=(numeros))
+aleatorio = np.random.randint(inferior,superior, size=(numeros))
 print(f'''los numeros son {aleatorio}''')

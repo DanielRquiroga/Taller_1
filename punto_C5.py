@@ -29,7 +29,7 @@ plt.show()
 #grafica nombre alexa
 plt.plot(x2, y2, 'bo-')
 plt.axis('equal')  # Establecer los ejes en la misma escala
-plt.title('alex')
+plt.title('alexa')
 plt.xlabel('Coordenada X')
 plt.ylabel('Coordenada Y')
 plt.grid(True)
@@ -38,7 +38,7 @@ plt.show()
 # Grafica nombre daniel
 plt.plot(x3, y3, 'bo-')
 plt.axis('equal')  # Establecer los ejes en la misma escala
-plt.title('alex')
+plt.title('dani')
 plt.xlabel('Coordenada X')
 plt.ylabel('Coordenada Y')
 plt.grid(True)
@@ -47,7 +47,7 @@ plt.show()
 # Grafica nombre kevin
 plt.plot(x4, y4, 'bo-')
 plt.axis('equal')  # Establecer los ejes en la misma escala
-plt.title('alex')
+plt.title('kevin')
 plt.xlabel('Coordenada X')
 plt.ylabel('Coordenada Y')
 plt.grid(True)

@@ -11,7 +11,7 @@ while(x):
     R=float(input('ingrese resistencia(ohm): '))
     C=float(input('ingrese capacitancia(Faradios): '))
     tao = 5*R*C
-    t = np.arange (0, 9, 0.001)
+    t = np.arange (0, 5*R*C, 0.001)
     coef= v0*(1-np.exp(-t/(R*C)))
     coef2= v0*(np.exp(-t/(R*C)))
 
