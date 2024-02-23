@@ -1,6 +1,5 @@
 import cv2
 
-
 img=cv2.imread('logo1.jpg')
 imgbinary = cv2.Canny(img,10,50)
 contornos, jerarquia =cv2.findContours(imgbinary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
