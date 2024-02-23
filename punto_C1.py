@@ -3,13 +3,14 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 temp = np.arange (-200, 200.5, 0.5)       #ingreso de temperatura numpy.arange genera un conjunto de números entre un valor de inicio y uno final
-ro=100                                    #100 ohms a 0 grados
-coe_pt=0.385                              #coeficiente platino
-ar=coe_pt*temp 
-resistencia=ro+ar 
+R0 = 100.0
+A = 3.9083e-3       #coeficiente Callendar-Van Dusen
+B = -5.775e-7       #coeficiente Callendar-Van Dusen
+C = -4.183e-12      #coeficiente Callendar-Van Dusen
+R = R0 * (1 + A * temp + B * temp**2 + C * (temp - 100) * temp**3) # usando la ecuación de Callendar-Van Dusen 
 plt.title ('Comportamiento sensor PT100')
 plt.ylabel('Resistencia Ω')
 plt.xlabel('Temperatura °C')
-plt.plot(temp,resistencia)
+plt.plot(temp,R)
 plt.grid(True)
 plt.show()

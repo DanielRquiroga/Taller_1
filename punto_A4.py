@@ -1,15 +1,10 @@
 #Realice un programa para el cálculo de la resistencia de una RTD de platino (PT100) en función de la temperatura.
-temp=80         #ingreso de temperatura
-
-ro=100          # 100 ohms a 0 grados
-coe_pt=0.385    # coeficiente platino
-ar=coe_pt*temp 
-##{
-##calculo de resistencia de RTD
-##RT=ro+Δr
-##Δr=(α+ro)*(Δt)
-##%}
-resistencia=ro+ar
+import math
+temp = 40
+R0 = 100.0
+A = 3.9083e-3       #coeficiente Callendar-Van Dusen
+B = -5.775e-7       #coeficiente Callendar-Van Dusen
+C = -4.183e-12      #coeficiente Callendar-Van Dusen
+R = R0 * (1 + A * temp + B * temp**2 + C * (temp - 100) * temp**3) # usando la ecuación de Callendar-Van Dusen
 print()
-print(f'''El calculo de una resistencia de valor {temp} grados en funcion de la temperatura es {resistencia} aproximadamente''')
-print()
+print(f'la resistencia es aproximandamente {R:.3f} a una temperatura de {temp} grados\n')

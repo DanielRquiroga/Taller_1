@@ -1,3 +1,4 @@
+#Obtenga las coordenadas X y Y de los contornos de dos logos de automóviles (Chevrolet, Hyundai, Mazda, etc.), a través de Python.
 import cv2
 
 img=cv2.imread('logo1.jpg')
@@ -16,7 +17,7 @@ cv2.drawContours(img2,contornos2,-1,(0,255,0),3)
 cv2.imshow("imagen1",img)
 cv2.imshow("escala gris",imgbinary)
 cv2.imshow("imagen2",img2)
-cv2.imshow("escala gris",imgbinary2)
+cv2.imshow("escala gris2",imgbinary2)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
