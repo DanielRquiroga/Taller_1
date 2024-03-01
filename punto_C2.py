@@ -33,8 +33,8 @@ def graficar_respuesta_impulso(coeficientes):
 
 def main():
     print("Ingrese los coeficientes de la función de transferencia de segundo orden:")
-    num_coef = list(map(float, input("Ingrese coeficiente de frecuencia natural ").split()))
-    den_coef = list(map(float, input("Ingrese coeficiente de ganancia, factor de amortiguamiento seprado por espacios ").split()))
+    num_coef = list(map(float, input("Ingrese coeficiente de ganancia, frecuencia natural ").split()))
+    den_coef = list(map(float, input("Ingrese coeficiente de factor de amortiguamiento seprado por espacios ").split()))
 
     coeficientes = [num_coef, den_coef]
     tipo_sistema = determinar_tipo_sistema(coeficientes)

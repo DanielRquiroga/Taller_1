@@ -14,3 +14,14 @@ Taller # 1 asignado para el corte 1.
 
 ![App Screenshot](https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/07/duda-resuelta-existen-tantos-lenguajes-programacion-3079266.jpg?tf=1200x)
 
+
+
+
+## Integrantes
+
+- Kevin sebastian dueñas  lozano
+- Gilber alexander cantor quintero
+- Lheidy barragán  velasquez
+- Daniel ricardo quiroga contreras
+
+
